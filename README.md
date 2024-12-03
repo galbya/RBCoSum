@@ -1,2 +1,2 @@
 # RBCoSum
-Code for 'Rethinking-based Code Summarization with Chain of Comments(COLING 2025)'
+You can download the ranking dataset used for training the ranker from [here](https://drive.google.com/file/d/1iqG0rzgKhJ1CKYmmwRAvAXqFIKfB0tPT/view?usp=drive_link).
