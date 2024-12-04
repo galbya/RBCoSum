@@ -22,7 +22,7 @@ The arguments for the training command are as follows:
 
 `apps-eval-files`: file path to the evaluation dataset in JSON format.
 
-`task-type`: can be `gt_only_big` or `in_small_gt_big`. `in_small_gt_big` indicates that CCOT is used, while `gt_only_big` not.
+`task-type`: can be `gt_only_big` or `in_small_gt_big`. `in_small_gt_big` indicates that COC is used, while `gt_only_big` not.
 
 `language`: `python` or `java`, depending on the used dataset.
 
