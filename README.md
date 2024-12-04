@@ -15,10 +15,15 @@ mkdir logs
 Run `decoder_only_train.py`
 
 The arguments for the training command are as follows:
+
 `model-path`: path to StarCoderBase model directory.
+
 `apps-train-files`: file path to the training dataset in JSON format.
+
 `apps-eval-files`: file path to the evaluation dataset in JSON format.
+
 `task-type`: can be `gt_only_big` or `in_small_gt_big`. `in_small_gt_big` indicates that CCOT is used, while `gt_only_big` not.
+
 `language`: `python` or `java`, depending on the used dataset.
 
 
@@ -49,10 +54,15 @@ mkdir logs
 Run `seq_2_seq_train.py`
 
 The arguments for the training command are as follows:
+
 `model-path`: path to CodeT5 model directory.
+
 `apps-train-files`: file path to the training dataset in JSON format.
+
 `apps-eval-files`: file path to the evaluation dataset in JSON format.
+
 `task-type`: can be `gt_only_big` or `in_small_gt_big`. `in_small_gt_big` indicates that CCOT is used, while `gt_only_big` not.
+
 `language`: `python` or `java`, depending on the used dataset.
 
 
@@ -77,11 +87,17 @@ Run `generate_infer.py`
 The arguments for the training command are as follows:
 
 `model-type`: `starcoder1b` or `codet5large`.
+
 `model-path`: path to training checkpoint directory.
+
 `resource-path`: file path to the testing dataset in JSON format.
+
 `task-type`: can be `gt_only_big` or `in_small_gt_big`. `in_small_gt_big` indicates that CCOT is used, while `gt_only_big` not.
+
 `language`: `python` or `java`, depending on the used dataset.
+
 `num-samples`:  the number of results generated for each test data. `num-samples = 2` means generating two inference results for each test data.
+
 `batch-per-data`: the batch size for generating results for each data, which is less than or equal to `num-samples`.
 
 
