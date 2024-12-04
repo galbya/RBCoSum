@@ -203,9 +203,9 @@ if __name__ == "__main__":
     parser.add_argument('--fp16', default=True)
     parser.add_argument('--bf16', default=False)
 
-    parser.add_argument('--log-freq', default=290, type=int)
-    parser.add_argument('--eval-steps', default=580, type=float)
-    parser.add_argument('--save-freq', default=580, type=int)
+    parser.add_argument('--log-freq', default=30, type=int)
+    parser.add_argument('--eval-steps', default=90, type=float)
+    parser.add_argument('--save-freq', default=90, type=int)
 
     args = parser.parse_args()
     assert not (args.fp16 and args.bf16), "fp16 and bf16 cannot be True at the same time"

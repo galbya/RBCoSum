@@ -206,8 +206,7 @@ if __name__ == "__main__":
     # Training
     parser.add_argument('--epochs', default=4, type=int)
     parser.add_argument('--lr', default=2e-5, type=float)
-    parser.add_argument(
-        '--lr-scheduler', default="cosine", type=str)
+    parser.add_argument('--lr-scheduler', default="cosine", type=str)
     parser.add_argument('--weight-decay', default=0.01, type=float)
     parser.add_argument('--warmup-ratio', default=0.15, type=float)
     parser.add_argument('--batch-size', default=1, type=int)
@@ -216,9 +215,9 @@ if __name__ == "__main__":
     parser.add_argument('--fp16', default=True)
     parser.add_argument('--bf16', default=False)
 
-    parser.add_argument('--log-freq', default=15, type=int)  # 10
-    parser.add_argument('--eval-steps', default=45, type=float)  # 75
-    parser.add_argument('--save-freq', default=45, type=int)  # 150
+    parser.add_argument('--log-freq', default=30, type=int)
+    parser.add_argument('--eval-steps', default=90, type=float)
+    parser.add_argument('--save-freq', default=90, type=int)
 
     args = parser.parse_args()
     assert not (args.fp16 and args.bf16), "fp16 and bf16 cannot be True at the same time"
